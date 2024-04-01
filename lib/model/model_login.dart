@@ -23,6 +23,7 @@ class ModelLogin {
     required this.id,
   });
 
+
   factory ModelLogin.fromJson(Map<String, dynamic> json) => ModelLogin(
     value: json["value"],
     message: json["message"],

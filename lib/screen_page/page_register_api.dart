@@ -32,6 +32,7 @@ class _PageRegisterApiState extends State<PageRegisterApi> {
         isLoading = true;
       });
 
+
       http.Response response = await http.post(Uri.parse('http://10.126.68.85/beritaDb/register.php'),
           body: {
             "username": txtUsername.text,

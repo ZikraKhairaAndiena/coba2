@@ -39,6 +39,8 @@ class Datum {
   String gambarBerita;
   DateTime tglBerita;
 
+
+
   Datum({
     required this.id,
     required this.judul,

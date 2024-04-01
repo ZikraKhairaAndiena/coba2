@@ -233,6 +233,7 @@ class _FormRegisterState extends State<PageFormRegister> {
                     }
                   },
                   child: const Text("SIMPAN"),
+
                 )
               ],
             ),

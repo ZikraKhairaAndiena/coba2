@@ -92,6 +92,7 @@ class _PageListBeritaState extends State<PageListBerita> {
                         ),
                       );
                     },
+
                     child: Card(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

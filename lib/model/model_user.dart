@@ -18,6 +18,7 @@ class ModelUsers {
   String website;
   Company company;
 
+
   ModelUsers({
     required this.id,
     required this.name,

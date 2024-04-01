@@ -96,6 +96,7 @@ class _PageListBeritaState extends State<PageListBerita> {
                             MaterialPageRoute(
                                 builder: (_) => DetailBerita(data)));
                       },
+
                       child: Card(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,

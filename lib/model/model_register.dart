@@ -17,6 +17,7 @@ class ModelRegister {
     required this.message,
   });
 
+
   factory ModelRegister.fromJson(Map<String, dynamic> json) => ModelRegister(
     value: json["value"],
     message: json["message"],

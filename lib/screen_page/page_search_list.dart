@@ -40,6 +40,7 @@ class _PageSearchListState extends State<PageSearchList> {
       }
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

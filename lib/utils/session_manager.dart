@@ -17,6 +17,7 @@ class SessionManager{
     idUser = sharedPreferences.getString("id");
     userName = sharedPreferences.getString("username");
     return value;
+
   }
 
   //clear session --> untuk logout
