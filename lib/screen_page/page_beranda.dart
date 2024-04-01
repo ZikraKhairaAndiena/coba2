@@ -1,5 +1,9 @@
 import 'package:coba2/screen_page/page_bottom_navigation.dart';
+import 'package:coba2/screen_page/page_list_berita.dart';
+import 'package:coba2/screen_page/page_list_users.dart';
 import 'package:coba2/screen_page/page_navigation_bar.dart';
+import 'package:coba2/screen_page/page_register_api.dart';
+import 'package:coba2/screen_page/page_search_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 
@@ -140,6 +144,90 @@ class PageBeranda extends StatelessWidget {
                   },
                   child: Text(
                     'Buttom Navigation Bar',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                  ),
+                  color: Colors.green,
+                  textColor: Colors.white,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    //tambahkan code toast
+                    showToast(
+                      'Pindah ke Page Search List',
+                      context: context,
+                      axis: Axis.horizontal,
+                      alignment: Alignment.center,
+                      position: StyledToastPosition.bottom,
+                      toastHorizontalMargin: 28,
+                      fullWidth: true,
+                    );
+
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PageListUsers ()));
+                  },
+                  child: Text(
+                    'Buttom List User',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                  ),
+                  color: Colors.green,
+                  textColor: Colors.white,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    //tambahkan code toast
+                    showToast(
+                      'Page List Berita',
+                      context: context,
+                      axis: Axis.horizontal,
+                      alignment: Alignment.center,
+                      position: StyledToastPosition.bottom,
+                      toastHorizontalMargin: 28,
+                      fullWidth: true,
+                    );
+
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PageListBerita ()));
+                  },
+                  child: Text(
+                    'Page List Berita',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                  ),
+                  color: Colors.green,
+                  textColor: Colors.white,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    //tambahkan code toast
+                    showToast(
+                      'Page Register API',
+                      context: context,
+                      axis: Axis.horizontal,
+                      alignment: Alignment.center,
+                      position: StyledToastPosition.bottom,
+                      toastHorizontalMargin: 28,
+                      fullWidth: true,
+                    );
+
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PageRegisterApi ()));
+                  },
+                  child: Text(
+                    'Page Register API',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                   ),
                   color: Colors.green,
